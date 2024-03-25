@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [Range(0, 20)] public float rotationSpeed = 10.0f;
+    [Range(0, 20)] public float rotationSpeed = 20.0f;
 
-    [Range(0, 20)] public float speed = 3.0f;
+    [Range(0, 20)] public float speed = 8.0f;
+
+    [Range(0, 7)] public float boundaryRadius = 7f;
 
     private int _healthPoints = 100;
 
@@ -20,7 +22,7 @@ public class PlayerController : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         float horizontalMovement = Input.GetAxis("Horizontal");
         float verticalMovement = Input.GetAxis("Vertical");
@@ -29,11 +31,28 @@ public class PlayerController : MonoBehaviour
 
         if (movement != Vector3.zero)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(movement),
-                rotationSpeed * Time.deltaTime);
+            _rigidbody.MoveRotation(Quaternion.Lerp(transform.rotation, Quaternion
+                .LookRotation(Vector3.ClampMagnitude(movement * Time.fixedDeltaTime, 1)), rotationSpeed));
+        }
+
+        Vector3 newPosition = _rigidbody.position + Vector3
+            .ClampMagnitude(movement * Time.fixedDeltaTime * speed, 1);
+
+        if (newPosition.magnitude < boundaryRadius)
+        {
+            _rigidbody.MovePosition(newPosition);
+        }
+        else
+        {
+            _rigidbody.MovePosition(newPosition.normalized * boundaryRadius);
         }
 
         _animator.SetFloat("Speed", Vector3.ClampMagnitude(movement, 1).magnitude);
-        transform.position += movement * speed * Time.deltaTime;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(new Vector3(0f, 0f, 0f), boundaryRadius);
     }
 }
