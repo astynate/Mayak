@@ -55,20 +55,4 @@ public class PlayerController : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(new Vector3(0f, 0f, 0f), boundaryRadius);
     }
-
-    public int GetHealthPoints => _healthPoints;
-    public int GetFearPoints => _fearPoints;
-
-    public void TakeDamage(int damage)
-    {
-        if (damage <= _healthPoints)
-        {
-            _healthPoints -= damage;
-        }
-
-        if (_healthPoints <= 0)
-        {
-            Application.Quit();
-        }
-    }
 }
