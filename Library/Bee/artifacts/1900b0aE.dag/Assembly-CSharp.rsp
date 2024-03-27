@@ -385,6 +385,9 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.2.15f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scenes/Lighthouse/Camera/Controllers/CameraController.cs"
+"Assets/Scenes/Lighthouse/Intrerface/PlayerStats.cs"
+"Assets/Scenes/Lighthouse/Сharacters/NPC/Ghost/GhostController.cs"
+"Assets/Scenes/Lighthouse/Сharacters/NPC/NPC.cs"
 "Assets/Scenes/Lighthouse/Сharacters/Player/Controllers/PlayerController.cs"
 -langversion:9.0
 

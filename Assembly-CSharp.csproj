@@ -62,7 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scenes\Lighthouse\Camera\Controllers\CameraController.cs" />
+    <Compile Include="Assets\Scenes\Lighthouse\Intrerface\PlayerStats.cs" />
     <Compile Include="Assets\Scenes\Lighthouse\Сharacters\Player\Controllers\PlayerController.cs" />
+    <Compile Include="Assets\Scenes\Lighthouse\Сharacters\NPC\Ghost\GhostController.cs" />
+    <Compile Include="Assets\Scenes\Lighthouse\Сharacters\NPC\NPC.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
