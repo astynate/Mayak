@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B41988B4-0E24-D787-B61A-3C8CB6114345}</ProjectGuid>
+    <ProjectGuid>{6674DBB6-7CBF-8E5C-5AFF-D1FE51CAAF8E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,10 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scenes\Lighthouse\Camera\Controllers\CameraController.cs" />
-    <Compile Include="Assets\Scenes\Lighthouse\Intrerface\PlayerStats.cs" />
     <Compile Include="Assets\Scenes\Lighthouse\Сharacters\Player\Controllers\PlayerController.cs" />
-    <Compile Include="Assets\Scenes\Lighthouse\Сharacters\NPC\Ghost\GhostController.cs" />
-    <Compile Include="Assets\Scenes\Lighthouse\Сharacters\NPC\NPC.cs" />
+    <Compile Include="Assets\Scenes\Lighthouse\Environment\Generator\GeneratorScripts\GeneratorTrigger.cs" />
+    <Compile Include="Assets\Scenes\Lighthouse\UI\CanvasScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
