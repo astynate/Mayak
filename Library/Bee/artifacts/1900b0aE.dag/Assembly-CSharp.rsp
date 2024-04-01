@@ -389,6 +389,7 @@
 -analyzer:"D:/EditorUnity/2023.2.15f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"D:/EditorUnity/2023.2.15f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scenes/Lighthouse/Camera/Controllers/CameraController.cs"
+"Assets/Scenes/Lighthouse/Camera/Controllers/CameraPathSwitcher.cs"
 "Assets/Scenes/Lighthouse/Environment/Generator/GeneratorScripts/GeneratorTrigger.cs"
 "Assets/Scenes/Lighthouse/UI/CanvasScript.cs"
 "Assets/Scenes/Lighthouse/Сharacters/Player/Controllers/PlayerController.cs"

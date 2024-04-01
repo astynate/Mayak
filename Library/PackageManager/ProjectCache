@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638475852933855543
-    m_Hash: 1009257874
+      ticks: 638475943518609933
+    m_Hash: 4231412568
   m_LockFileStatus:
     m_FilePath: D:/Mayak/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638475852933916765
-    m_Hash: 3078140862
+      ticks: 638475943518609933
+    m_Hash: 3897649289
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
